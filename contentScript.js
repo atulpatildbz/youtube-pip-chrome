@@ -13,7 +13,11 @@ function checkForWatchPage() {
             pipButton.onclick = () => {
                 const video = document.querySelector('video');
                 if (video) {
-                    video.requestPictureInPicture();
+                    if (document.pictureInPictureElement) {
+                        document.exitPictureInPicture();
+                    } else {
+                        video.requestPictureInPicture();
+                    }
                 }
             };
             rightControls.insertBefore(pipButton, rightControls.children[rightControls.children.length - 1]);
