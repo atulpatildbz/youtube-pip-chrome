@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Button Adder",
+  "name": "YouTube PiP Mode",
   "version": "1.0",
-  "description": "Adds a custom button to YouTube watch pages.",
+  "description": "Adds a button to the YouTube watch page to toggle the PIP mode.",
   "permissions": [
     "activeTab"
   ],
